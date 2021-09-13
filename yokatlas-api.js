@@ -68,6 +68,10 @@ class YOKATLAS {
         return html.match(/\d{0,1000}[+]\d{0,10}/)[0]
     }
 
+    getYOPkODU(html) {
+        return
+    }
+
     parseResults({data}) {
         return data.map(
             _ => {
@@ -109,21 +113,18 @@ class YOKATLAS {
         )
     }
 
-    sendPayload() {
-        return new Promise((res, rej) => {
-            axios.post(
-                "https://yokatlas.yok.gov.tr/server_side/server_processing-atlas2016-TS-t4.php",
-            this.columns.toString(),
-                {   
-                    "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
-                }
-            ).then(
-                ({data}) => res(this.parseResults(data))
-            )
-        })
+    search(callback) {
+        if (typeof(callback) !== "function") return
+        axios.post(
+            "https://yokatlas.yok.gov.tr/server_side/server_processing-atlas2016-TS-t4.php",
+        this.columns.toString(),
+            {   
+                "Content-Type": "application/x-www-form-urlencoded; charset=UTF-8",
+            }
+        ).then(
+            ({data}) => callback(this.parseResults(data))
+        )
     }
 }
 
 module.exports = YOKATLAS
-
-

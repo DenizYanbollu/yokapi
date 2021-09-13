@@ -1,0 +1,27 @@
+{
+  "name": "yokatlas-api",
+  "version": "1.0.1",
+  "description": "Unofficial API Wrapper for YÖK's University Information system.",
+  "main": "yokatlas-api.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DenizYanbollu/yokapi.git"
+  },
+  "keywords": [
+    "api",
+    "wrapper",
+    "university"
+  ],
+  "author": "denizyanbollu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DenizYanbollu/yokapi/issues"
+  },
+  "homepage": "https://github.com/DenizYanbollu/yokapi#readme",
+  "dependencies": {
+    "axios": "0.21.4"
+  }
+}
