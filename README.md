@@ -1,12 +1,12 @@
 # yokatlas-api
 ### Unofficial API Wrapper for YÖK's University Information system.
-## Description
+
 ## Installation
 This package lets you search among all of the undergraduate programs in Turkey by wrapping state's official search API.
 ```sh
 npm install --save yokatlas-api
 ```
-# [Live Demo](https://breakdance.github.io/breakdance/)
+# [Live Demo]()
 ## Usage
 
 ### Import
@@ -59,7 +59,8 @@ Searching by university city and program:
 ```js
   new yokatlasapi({
       "sehir_adi": "Ankara",
-      "program_adi": "İngiliz Dili ve Edebiyatı"
+      "program_adi": "İngiliz Dili ve Edebiyatı",
+      "length": 1
   }).search(results => console.log(results)) 
 ``` 
 ### Return Format
