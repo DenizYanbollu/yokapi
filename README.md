@@ -58,8 +58,8 @@ Searching by university city and program:
 ### Search Parameters
 ```js
   new yokatlasapi({
-      "sehir_adi": "Ankara",
-      "program_adi": "İngiliz Dili ve Edebiyatı",
+      "sehir_adi": "Adana",
+      "program_adi": "İngiliz",
       "length": 1
   }).search(results => console.log(results)) 
 ``` 

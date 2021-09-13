@@ -1,6 +1,6 @@
 {
   "name": "yokatlas-api",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Unofficial API Wrapper for YÖK's University Information system.",
   "main": "yokatlas-api.js",
   "scripts": {
